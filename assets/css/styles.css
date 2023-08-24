@@ -243,7 +243,7 @@ nav ul li a:hover {
 
 .carousel-item.active {
   width: fit-content;
-  display: flex;
+  display: flex !important;
   align-items: center;
 }
 
@@ -260,17 +260,15 @@ nav ul li a:hover {
 }
 
 .testi-desc {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  width: 415px;
 }
 
 .testi-desc .testi-text,
 .accordion-button,
-.accordion-body,
-.footer-text {
+.accordion-body {
   color: #000;
   font-size: 14px;
   font-style: normal;
@@ -329,10 +327,12 @@ nav ul li a:hover {
 /* FAQ */
 #faq {
   margin-top: 100px;
+}
+
+.faq-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1168px;
   height: 344px;
 }
 
@@ -346,9 +346,24 @@ nav ul li a:hover {
   height: 56px;
 }
 
-.accordion-button {
+button.accordion-button {
   width: 668px;
   height: 56px;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.accordion-text {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
 }
 
 /* Footer */
@@ -359,6 +374,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   gap: 86px;
+  margin-bottom: 100px;
 }
 
 .footer-part {
@@ -367,12 +383,7 @@ footer {
   gap: 16px;
 }
 
-.footer-part ul li {
-  list-style: none;
-  margin-bottom: 16px;
-}
-
-.footer-part ul li a {
+.footer-part a.footer-nav {
   text-decoration: none;
   color: #000;
   font-family: Helvetica;
@@ -380,6 +391,15 @@ footer {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.footer-part p {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 0;
 }
 
 .socmed-logo {
@@ -395,6 +415,18 @@ footer {
 
 .socmed-logo a:hover svg path {
   stroke: #0d28a6;
+}
+
+.footer-logo {
+  width: fit-content;
+}
+
+.footer-logo a {
+  font-family: "Barriecito", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 28px;
+  font-weight: 800;
 }
 
 /* Responsive */
@@ -456,7 +488,15 @@ footer {
 
   /* Testimonial */
   .carousel {
-    width: 80%;
+    width: 90%;
+    height: 392px;
+  }
+
+  .carousel-item.active {
+    padding-top: 20px;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
   }
 
   .testi-container {
@@ -466,5 +506,54 @@ footer {
 
   .testi-desc {
     width: 80%;
+    height: fit-content;
+  }
+
+  .testi-desc .star-testimonial {
+    margin: auto;
+  }
+
+  /* Rent Banner */
+  .rent-banner {
+    width: 90%;
+    height: 400px;
+    padding: 20px 40px;
+  }
+
+  /* FAQ */
+  .faq-container {
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .faq-text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .accordion,
+  .accordion-flush {
+    width: 90%;
+    height: 525px;
+  }
+
+  button.accordion-button {
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 16px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    gap: 16px;
+  }
+
+  .footer-logo a {
+    font-size: 32px;
   }
 }
