@@ -13,20 +13,53 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <nav>
-      <div class="logo">
-        <a href="index.html">Binar Rental Car</a>
-      </div>
-      <div class="navbar-menu">
-        <ul>
-          <li><a href="">Our Services</a></li>
-          <li><a href="">Why Us</a></li>
-          <li><a href="">Testimonial</a></li>
-          <li><a href="">FAQ</a></li>
-          <li class="navbar-register-btn">
-            <a href="register.html">Register</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">Binar Car Rental</a>
+        <button
+          class="btn btn-mobile d-md-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <a class="offcanvas-brand logo" href="#">Binar Car Rental</a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#our-services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#why-us">Why Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item navbar-register-btn">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -54,6 +87,7 @@
       </div>
     </section>
 
+    <!-- Our Services -->
     <section id="our-services">
       <div class="container d-flex h-100">
         <div class="row d-flex align-items-center justify-content-center">
@@ -128,6 +162,7 @@
       </div>
     </section>
 
+    <!-- Why Us -->
     <section id="why-us">
       <div class="container">
         <div class="wu-text">
@@ -241,6 +276,7 @@
       </div>
     </section>
 
+    <!-- Testimonial -->
     <section id="testimonial">
       <h3 class="h3-title">Testimonial</h3>
       <p class="desc-text">Berbagai review positif dari para pelanggan kami</p>
@@ -457,51 +493,54 @@
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span aria-hidden="true"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="57"
-              height="68"
-              viewBox="0 0 57 68"
-              fill="none">
-              <path
-                d="M35.4835 51L21.2901 34L35.4835 17"
-                stroke="black"
-                stroke-width="8"
-                stroke-linecap="round"
-                stroke-linejoin="round" /></svg
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span aria-hidden="true"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="57"
-              height="68"
-              viewBox="0 0 57 68"
-              fill="none">
-              <path
-                d="M21.5164 51L35.7099 34L21.5164 17"
-                stroke="black"
-                stroke-width="8"
-                stroke-linecap="round"
-                stroke-linejoin="round" /></svg
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="button-prev-next">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span aria-hidden="true"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57"
+                height="68"
+                viewBox="0 0 57 68"
+                fill="none">
+                <path
+                  d="M35.4835 51L21.2901 34L35.4835 17"
+                  stroke="black"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" /></svg
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span aria-hidden="true"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="57"
+                height="68"
+                viewBox="0 0 57 68"
+                fill="none">
+                <path
+                  d="M21.5164 51L35.7099 34L21.5164 17"
+                  stroke="black"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" /></svg
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
 
+    <!-- Rent Banner -->
     <div class="rent-container">
       <div class="rent-banner">
         <h2>Sewa Mobil di (Lokasimu) Sekarang</h2>
@@ -515,6 +554,7 @@
       </div>
     </div>
 
+    <!-- FAQ -->
     <section id="faq">
       <div class="faq-container">
         <div class="faq-text">
@@ -663,6 +703,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <div class="footer-part">
         <p class="footer-text">

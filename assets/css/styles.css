@@ -16,10 +16,6 @@ nav {
 }
 
 .logo {
-  width: fit-content;
-}
-
-.logo a {
   font-family: "Barriecito", sans-serif;
   text-decoration: none;
   color: #000;
@@ -31,6 +27,10 @@ nav {
   color: #000;
 }
 
+.btn-mobile {
+  color: #f1f3ff;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -39,14 +39,14 @@ nav ul {
   justify-content: space-between;
 }
 
-nav ul li a {
+a.nav-link {
   text-decoration: none;
   color: #000;
   font-size: 14px;
   font-weight: 400;
 }
 
-nav ul li a:hover {
+a.nav-link:hover {
   color: #000;
 }
 
@@ -73,6 +73,7 @@ nav ul li a:hover {
   background-color: #f1f3ff;
   height: fit-content;
   width: 100%;
+  margin-top: 80px;
 }
 
 #hero .hero-right-side {
@@ -460,6 +461,19 @@ footer {
 
   #hero .container {
     padding-right: 0 !important;
+  }
+
+  .offcanvas,
+  .offcanvas.offcanvas-end {
+    width: 180px !important;
+  }
+
+  .offcanvas-brand {
+    font-size: 20px;
+  }
+
+  .offcanvas-body {
+    width: 75%;
   }
 
   /* Our Services */
