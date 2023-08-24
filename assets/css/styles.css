@@ -527,6 +527,11 @@ footer {
     margin: auto;
   }
 
+  .button-prev-next .carousel-control-prev,
+  .button-prev-next .carousel-control-next {
+    bottom: 230px;
+  }
+
   /* Rent Banner */
   .rent-banner {
     width: 90%;
